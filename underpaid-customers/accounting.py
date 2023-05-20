@@ -1,5 +1,5 @@
 # global variable statick price of melons, can be changed when price flactuates
-melon_cost = 1.00
+MELON_COST = 1.00
 
 def payment_for_melons(cost, name, num, paid):
     """ Calculating balance for bought melons
@@ -21,10 +21,9 @@ def check_input(price):
     except ValueError:
         return False
 
-# function that takes log file to check for correct
+# function that takes log file to check
 def calculate_correct_payment(customer_file):
-    """ Calculating correct balance for bought melons, taking log file as an argumant.
-    """
+    """ Calculating correct balance for bought melons, taking log file as an argumant."""
     # opening file
     the_file = open(customer_file)
     for line in the_file:
