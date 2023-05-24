@@ -131,7 +131,7 @@ def word_lengths(words):
         [5, 3, 5, 4]
     """
 
-    return []
+    return [len(word) for word in words]
 
 
 def sum_numbers(numbers):
