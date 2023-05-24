@@ -364,8 +364,8 @@ def find_letter_indices(words, letter):
     ("o" does not appear in "jumps", so the result for that input is
     `None`.)
     """
-
-    return []
+   
+    return [index for word in words for index,char in enumerate(word) if char == letter]
 
 
 #####################################################################
