@@ -54,7 +54,7 @@ def n_long_words(words, n):
         ['apples', 'bananas']
     """
 
-    return [word for word in words if len(word) == n]
+    return [word for word in words if len(word) > n]
 
 
 def smallest_int(numbers):
