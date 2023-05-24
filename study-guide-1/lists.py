@@ -99,7 +99,7 @@ def largest_int(numbers):
 
     item = None
     for number in numbers:
-        if number > item or item is None:
+        if item is None or number > item:
             item = number
     return item
 
