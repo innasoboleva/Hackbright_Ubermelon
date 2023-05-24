@@ -136,6 +136,58 @@ PART TWO:
 
 # END OF PRACTICE: You can ignore everything below.
 
+
+def hello_world():
+    print("Hello World")
+
+
+def say_hi(name):
+    print(f"Hi {name}")
+    
+
+def print_product(num1, num2):
+    print(num1 * num2)
+
+
+def repeat_string(word, number):
+    print(word * number)
+
+
+def print_sign(number):
+    if number > 0:
+        print("Higher than 0")
+    elif number < 0:
+        print("Lower than 0")
+    else:
+        print("Zero")
+
+
+def is_divisible_by_three(number):
+    return True if number % 3 == 0 else False
+
+
+def num_spaces(sentence):
+    number = 0
+    for char in sentence:
+        if char == " ":
+            number += 1
+    return number
+
+
+def total_meal_price(price, tip=.15):
+    """ It returns the total amount paid (price + price * tip) """
+
+    return float(price + (tip * price))
+
+
+def sign_and_parity(number):
+    return ['Positive', 'Even'] if number > 0 and number % 2 == 0 \
+        else ['Negative', 'Even'] if number < 0 and number % 2 == 0 \
+        else ['Positive', 'Odd'] if number > 0 and number % 2 != 0 \
+        else ['Negative', 'Odd'] if number < 0 and number % 2 != 0 \
+        else None
+
+
 if __name__ == "__main__":
     import doctest
 
