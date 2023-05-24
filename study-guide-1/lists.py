@@ -175,9 +175,9 @@ def mult_numbers(numbers):
         1
     """
 
-    product = None
+    product = 1
     for number in numbers:
-        if product is None:
+        if product is 1:
             product = number
         else:
             product *= number
