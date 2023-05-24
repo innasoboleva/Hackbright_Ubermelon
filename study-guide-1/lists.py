@@ -149,8 +149,10 @@ def sum_numbers(numbers):
         >>> sum_numbers([])
         0
     """
-
-    return None
+    sum = 0
+    for number in numbers:
+        sum += number
+    return sum
 
 
 def mult_numbers(numbers):
