@@ -175,7 +175,13 @@ def mult_numbers(numbers):
         1
     """
 
-    return None
+    product = None
+    for number in numbers:
+        if product is None:
+            product = number
+        else:
+            product *= number
+    return product
 
 
 def join_strings(words):
