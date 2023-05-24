@@ -188,6 +188,14 @@ def sign_and_parity(number):
         else None
 
 
+def full_title(name, job="Engineer"):
+    return job + " " + name
+
+
+def write_letter(name, job, sender_name):
+    return print(f"Dear {full_title(name, job)}, I think you are amazing! Sincerely, {sender_name}")
+
+
 if __name__ == "__main__":
     import doctest
 
