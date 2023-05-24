@@ -299,8 +299,14 @@ def reverse_list_in_place(items):
         >>> orig
         ['I', 'love', 'cookies']
     """
-
-    return []
+    ind_first = 0
+    ind_last  = -1
+    for _ in range(len(items) // 2):
+        first = items[ind_first]
+        items[ind_first] = items[ind_last]
+        items[ind_last] = first
+        ind_first += 1
+        ind_last -= 1
 
 
 def duplicates(items):
