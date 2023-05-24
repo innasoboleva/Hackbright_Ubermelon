@@ -248,7 +248,10 @@ def join_strings_with_comma(words):
     new_string = ""
     if len(words) > 1:
         for word in words:
-            new_string = new_string + word
+            if new_string != "":
+                new_string = new_string + ', ' + word
+            else:
+                new_string = word
         return new_string
     elif len(words) == 1:
         return words[0]
