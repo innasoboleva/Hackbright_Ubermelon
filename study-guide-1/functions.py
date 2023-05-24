@@ -138,22 +138,33 @@ PART TWO:
 
 
 def hello_world():
+    """Prints "Hello World."""
+
     print("Hello World")
 
 
 def say_hi(name):
+    """Prints "Hi" followed by the given name."""
+
     print(f"Hi {name}")
     
 
 def print_product(num1, num2):
+    """Takes two integers and multiplies them together. Prints the result."""
+
     print(num1 * num2)
 
 
 def repeat_string(word, number):
+    """Takes a string and an integer and prints the string that many times."""
+
     print(word * number)
 
 
 def print_sign(number):
+    """Takes an integer and prints "Higher than 0" if higher than zero 
+    and "Lower than 0" if lower than zero. If the integer is zero, prints "Zero"."""
+
     if number > 0:
         print("Higher than 0")
     elif number < 0:
@@ -163,10 +174,15 @@ def print_sign(number):
 
 
 def is_divisible_by_three(number):
-    return True if number % 3 == 0 else False
+    """Takes an integer and returns a boolean (True or False), 
+    depending on whether the number is evenly divisible by 3."""
+
+    return number % 3 == 0
 
 
 def num_spaces(sentence):
+    """Takes a sentence as one string and returns the number of spaces."""
+
     number = 0
     for char in sentence:
         if char == " ":
@@ -181,6 +197,9 @@ def total_meal_price(price, tip=.15):
 
 
 def sign_and_parity(number):
+    """Takes an integer as an argument and returns two pieces 
+    of information as strings: "Positive" or "Negative" and "Even" or "Odd"."""
+
     return ['Positive', 'Even'] if number > 0 and number % 2 == 0 \
         else ['Negative', 'Even'] if number < 0 and number % 2 == 0 \
         else ['Positive', 'Odd'] if number > 0 and number % 2 != 0 \
@@ -189,10 +208,14 @@ def sign_and_parity(number):
 
 
 def full_title(name, job="Engineer"):
+    """Returns the person's title and name in one string."""
+
     return job + " " + name
 
 
 def write_letter(name, job, sender_name):
+    """Given a recipient name, job title and a sender name, it prints a letter."""
+
     return print(f"Dear {full_title(name, job)}, I think you are amazing! Sincerely, {sender_name}")
 
 
