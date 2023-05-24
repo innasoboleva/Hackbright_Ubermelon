@@ -97,7 +97,11 @@ def largest_int(numbers):
         True
     """
 
-    return 0
+    item = None
+    for number in numbers:
+        if number > item or item is None:
+            item = number
+    return item
 
 
 def halvesies(numbers):
